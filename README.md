@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Wise Interview React Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a blank canvas bootsrapped by create-react-app. The objective of this test is to gauge your JS skills. We will be critiquing your knowledge of project architecure, JS best practices, and coding style. This test is intended to take no more than 2 hours. Please fork this repo, and push your code to a branch in your forked repo. 
 
-## Available Scripts
+In this exercise you will create an Epochs table that has sorting, search and/or pagination. Data will be available at the endpoint provided in the .env file. Note: It is not required to finish implementing all the features.
 
-In the project directory, you can run:
+Apollo GraphQL is already setup with the subgraph endpoint we are going to use. You can find the subgraph here and use the playground to see the schema and make queries: https://thegraph.com/explorer/subgraph/graphprotocol/graph-network-mainnet.
 
-### `npm start`
+For this challenge we will query the Entity called Epoch.
+After you get all of the epochs (or some of them, if you use pagination), render them in a table with the columns with the data you choose to display. 
+In order to format Big numbers that come back from the subgraph fields, divide them with 10^18. Don't worry about precision. You can round them after division, truncate the decimals etc.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+All columns should be sortable in asc/desc order. Default order should be by Epoch's startBlock. Make use of GraphQL queries.
+Search should only be implemented for Epoch's startBlock. Make sure to use a GraphQL query.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Bonus! The table should be horizontally scrollable on mobile.
 
-### `npm test`
+Notes
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Please use Apollo client with hooks to query.
 
-### `npm run build`
+Put your queries into apollo/queries.js file.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Feel free to install libraries that aid in your ability to complete this challenge in a timely manner. ethers.js and Material ui are encouraged. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
