@@ -4,7 +4,7 @@ This is a blank canvas bootsrapped by create-react-app. The objective of this te
 
 In this exercise you will create an Epochs table that has sorting, search and/or pagination. Data will be available at the endpoint provided in the .env file. Note: It is not required to finish implementing all the features.
 
-Apollo GraphQL is already setup with the subgraph endpoint we are going to use. You can find the subgraph here and use the playground to see the schema and make queries: https://thegraph.com/explorer/subgraph/graphprotocol/graph-network-mainnet.
+The subgraph endpoint we will use is located in the .env file. You can find the subgraph here and use the playground to see the schema and make queries: https://thegraph.com/explorer/subgraph/graphprotocol/graph-network-mainnet.
 
 For this challenge we will query the Entity called Epoch.
 After you get all of the epochs (or some of them, if you use pagination), render them in a table with the columns with the data you choose to display. 
