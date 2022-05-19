@@ -1,6 +1,6 @@
 # Wise Interview React Challenge
 
-This is a blank canvas bootsrapped by create-react-app. The objective of this test is to gauge your JS skills. We will be critiquing your knowledge of project architecure, JS best practices, and coding style. This test is intended to take no more than 2 hours. Please fork this repo, and push your code to a branch in your forked repo. 
+This is a blank canvas bootsrapped by create-react-app. The objective of this test is to gauge your JS skills. We will be critiquing your knowledge of project architecure, JS best practices, and coding style. This test is intended to take no more than 2 hours. Please fork this repo and feel free to push straight to main branch. 
 
 In this exercise you will create an Epochs table that has sorting, search and/or pagination. Data will be available at the endpoint provided in the .env file. Note: It is not required to finish implementing all the features.
 
